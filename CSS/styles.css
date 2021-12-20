@@ -348,7 +348,6 @@ a:hover {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 1256px;
-    height: 1072px;
 }
 .page-three {
     margin-top: -317px;
@@ -425,11 +424,11 @@ a:hover {
     color: rgba(54, 54, 54, 0.5);
     outline: none;
 }
-.form.name {
+.form-name {
     grid-area: 15/5;
     margin-top: 15px;
 }
-.form.phone {
+.form-phone {
     margin-top: 15px;
     grid-area: 15/10;
 }
@@ -522,7 +521,8 @@ input::placeholder {
     margin-left: 9px;
 }
 .image-shadow {
-    width: 344px;
+    padding: 1px;
+    width: 343px;
     grid-area: 3/1;
     margin-left: 8px;
     margin-top: -64px;
@@ -534,7 +534,7 @@ input::placeholder {
     margin-top: -14px;
 }
 .logo-3-1-5 {
-    margin-top: -41px;
+    margin-top: -32px;
     grid-area: 7/4;
     margin-left: -21px;
 }
@@ -545,9 +545,45 @@ input::placeholder {
     font-size: 11px;
     line-height: 37px;
     color: #FFFFFF;
+    margin-top: 0px;
 }
 p>br {
     display: none;
+}
+.form-name {
+    grid-area: 10/2;
+    margin-left: -43px;
+    margin-top: 61px;
+}
+.label {
+    color: #FFFFFF;
+}
+.content-text>input {
+    background-color: #131313;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    width: 340px;
+}
+.input-form::placeholder {
+    color: #FFFFFF;
+}
+.form-phone {
+    grid-area: 11/2;
+    margin-left: -60px;
+    margin-top: 63px;
+}
+.page-three>.checkbox {
+    grid-area: 14/1;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-left:17px;
+}
+.page-three>button {
+    grid-area: 18/2;
+    width: 340px;
+    margin-left: -43px;
+    margin-top: 25px;
 }
 }
 .heading-text-four {
@@ -556,27 +592,31 @@ p>br {
     line-height: 28px;
     width: max-content;
     grid-area: 1/10;
-    margin-top: 28.35px;
+    margin-top: -250px;
     padding-left: 4px;
 }
 .logo-4-1-1 {
     padding-left: 33px;
     padding-top: 10px;
     grid-area: 2/10;
+    margin-top: -270px;
 }
 .logo-4-1-2 {
     padding-left: 17px;
     padding-top: 3px;
     grid-area: 2/11;
+    margin-top: -270px;
 }
 .logo-4-1-3 {
     padding-right: 93px;
     padding-top: 10px;
     grid-area: 2/12;
+    margin-top: -270px;
 }
 .block-4-image {
     width: max-content;
-    grid-area: 3/1;
+    grid-area: 1/1;
+    margin-top: -135px;
 }
 .image-4-2,.image-4-3 {
     margin-left: 30px;
@@ -602,18 +642,18 @@ h5:only-of-type {
     color: #959595;
 }
 .blocks-three {
-    grid-area: 8/16;
-    margin-top: -3px;
+    grid-area: 4/16;
+    margin-top: -25px;
     margin-left: -17px; 
 }
 .blocks-two {
-    grid-area: 8/9;
-    margin-top: -3px;
+    grid-area: 4/9;
+    margin-top: -25px;
     margin-left: -23px;
 }
 .blocks-one {
-    grid-area: 8/2;
-    margin-top: -3px;
+    grid-area: 4/2;
+    margin-top: -25px;
     margin-left: -29px;
 }
 .blocks-price {
@@ -630,19 +670,61 @@ h5:only-of-type {
     margin-top: 23px;
 }
 .price-one {
-    grid-area: 12/1;
-    margin-left: 33px
+    grid-area: 8/1;
+    margin-left: 33px;
+    margin-top: -5px;
 }
 .price-two {
-    grid-area: 12/8;
+    grid-area: 8/8;
     margin-left: 39px;
+    margin-top: -5px;
 }
 .price-three {
-    grid-area: 12/15;
+    grid-area: 8/15;
     margin-left: 45px;
+    margin-top: -5px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+.heading-text-four {
+    font-size: 22px;
+    line-height: 138.6%;
+    grid-area: 1/2;
+    margin-left: 33px;
+    margin-top: 83px;
+}
+.logo-4-1-1 {
+    padding-left: 15px;
+    padding-top: 65px;
+    grid-area: 2/3;
+}
+.logo-4-1-2 {
+    padding-left: 0px;
+    padding-top: 65px;
+    grid-area: 2/4;
+}
+.logo-4-1-3 {
+    margin-left: -15px;
+    padding-top: 65px;
+    grid-area: 2/5;
+}
+.image-4-1 {
+    margin-top: 85px;
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+}
+.block-4-image{
+    display: flex;
+    flex-direction: column;
+}
+.block-4 {
+    grid-area: 8/1;
+   width: 270px;
+   height: 241px;
+}
+.block-list {
 
+}
 }
 .page-5 {
     margin-top: -210px;
@@ -669,32 +751,40 @@ h5:only-of-type {
     justify-content: center;
 }
 .list-item-one {
-    grid-area: 2/4;  
+    grid-area: 1/4;
+    margin-top: -490px;  
 }
 .sp-one {
-    grid-area: 3/5;
+    grid-area: 1/5;
+    margin-top: -950px;
 }
 .list-item-two {
-    grid-area: 4/4;
+    grid-area: 1/4;
+    margin-top: -350px;
 }
 .sp-two {
-    grid-area: 5/5; 
+    grid-area: 1/5;
+    margin-top: -690px; 
 }
 .list-item-three {
-    grid-area: 6/4;
+    grid-area: 1/4;
+    margin-top: -210px;
 }
 .sp-three {
-    grid-area: 7/5; 
+    grid-area: 1/5;
+    margin-top: -410px; 
 }
 .list-item-four {
-    grid-area: 8/4;
+    grid-area: 1/4;
+    margin-top: -70px;
 }
 .sp-four {
-    grid-area: 9/5;
+    grid-area: 2/5;
+    margin-top: -230px;
 }
 .image-5-1 {
     margin-left: -135px;
-    margin-top: -10px;
+    margin-top: -600px;
 }
 .form-page-5 {
     display: flex;
@@ -704,6 +794,7 @@ h5:only-of-type {
     grid-area: 3/13;
     margin-left: 22px;
     flex-direction: row;
+    margin-top: -600px;
 }
 .name-form {
     display: flex;
@@ -754,12 +845,12 @@ h5:only-of-type {
     font-style: normal;
 }
 .logo-5-1 {
-    grid-area: 12/14;
+    grid-area: 2/14;
 }
 .logo-5-1-sp {
     display: inline-block;
     width: max-content;
-    grid-area: 12/16;
+    grid-area: 2/16;
     font-size: 18px;
     line-height: 26px;
     color: #E3B873;
@@ -773,7 +864,7 @@ h5:only-of-type {
     height: 864px;
     padding-top: 194px;
     position: relative;
-    margin-top: -90px;
+    margin-top: -1000px;
 }
 .page-5-5::before {
     position: absolute;
@@ -842,6 +933,9 @@ h5:only-of-type {
 }
 .page-6 {
     margin-top: 110px;
+}
+.page-six>.heading-text-four {
+    margin-top: 0px;
 }
 .frame-l {
     margin-left: -114px;
@@ -965,9 +1059,8 @@ h5:only-of-type {
     background-color: rgb(199, 61, 61);
     background-image: url(/Users/User/projects/Skillfactory/lending/image/image-7-1.jpg);
     background-size: cover;
-    height: 953px;
-    padding-top: 194px;
-    margin-top: 64px;
+    padding-top: 0px;
+    margin-top: -300px;
     position: relative;
 }
 .page-seven {
@@ -977,7 +1070,6 @@ h5:only-of-type {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     width: 1256px;
-    height: 1072px;
 
 }
 .page-7::before {
@@ -994,7 +1086,7 @@ h5:only-of-type {
     height: 445.32px;
     background-color: #131313;
     z-index: 1;
-    grid-area: 1/4;
+    grid-area: 4/4;
     margin-top: -416px;
 }
 .final-form-1>h2 {
@@ -1034,19 +1126,19 @@ h5:only-of-type {
     display: inline-block;
     width: max-content;
     text-align: center;
-    grid-area: 2/6;
+    grid-area: 5/6;
 }
 .logo-7 {
     display: flex;
     flex-direction: row;
     z-index: 1;
-    grid-area: 4/11;
+    grid-area: 7/11;
     gap: 15px;
     margin-left: -15px;
 }
 .map {
     z-index: 1;
-    grid-area: 5/4;
+    grid-area: 8/4;
 }
 .footer {
     height: 133px;
