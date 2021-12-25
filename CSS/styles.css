@@ -890,11 +890,11 @@ h5:only-of-type {
     padding-top: 48px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .container {
+.container {
     max-width: 375px;
     margin: 0 auto;
 } 
-    .page-one {
+.page-one {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
