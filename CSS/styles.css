@@ -69,6 +69,7 @@ a:hover {
     line-height: 15px;
     text-transform: uppercase;
 }
+/* =============Page-1================================= */
 .image-1-1 {
     background-color: rgb(199, 61, 61);
     background-image: url(../image/image-1-1.jpg);
@@ -116,33 +117,33 @@ a:hover {
     line-height: 36px;
     padding-left: 21px;
 }
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 21px;
+}
 .button-page-one {
     width: 207px;
     height: 51px;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center;
-    margin-left: 21px;
-    box-sizing: border-box;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.button-page-two {
-    width: 207px;
-    height: 51px;
-    box-sizing: border-box;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center;
-    padding: 17px 23px 18px 22px;
-    margin-left: 20px;
-    box-shadow: none;
-}
+/* ===================Page-2=========================== */
 .page-2 {
     background: #131313;
     height: 1074px;
     margin: 0 auto;
     background-size: cover;
+}
+.button-page-two {
+    width: 207px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 17px;
 }
 .list-page-two {
     display: flex;
@@ -204,7 +205,7 @@ a:hover {
 }
 .image-2-1 {
     background-color: rgb(199, 61, 61);
-    background-image: url(../image/image-2-1.png);
+    background-image: url('../image/image-2-1.png');
     width: 736px;
     height: 482px;
     grid-area: 1/6/1;
@@ -235,6 +236,7 @@ a:hover {
 .slider-mobil-l,.slider-mobil-r {
     visibility: hidden;
 }
+/* ==================Page-3=================================== */
 .page {
     display: grid;
     grid-template-columns: repeat(24, 50px);
@@ -246,34 +248,30 @@ a:hover {
 .page-three {
     margin-top: -317px;
 }
-.heading-text-three {
+.ht3 {
+    grid-area: 1/10;
+}
+.heading-text-3 {
+    display: inline-block;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 12.79px;
-    grid-area: 1/10;
     width: max-content;
     margin-top: 5px;
     margin-left: 23px;        
 }
-.logo-3-1-1 {
+.logos {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.logos-3 {
     grid-area: 2/10;
-    margin-top: 6px;
-    margin-left: 63px;
-    border-radius: 1px;
-}
-.logo-3-1-2 {
-    text-align: center;
-    grid-area: 2/11;
-    grid-auto-rows: auto;
-    margin-left: 13px;
-}
-.logo-3-1-3 {
-    grid-area: 2/12;
-    margin-top: 6px;
-    margin-left: 15px;
-    border-radius: 1px;
+    margin-left: 35px;
 }
 .logo-3-1-4 {
     grid-area: 6/11;
@@ -294,7 +292,7 @@ a:hover {
     grid-area: 11/11;
     margin-left: 14px;
 }
-.content-text.paragrahp-page-three {
+.paragrahp-page-three {
     font-size: 18px;
     line-height: 37px;
     color: black;
@@ -385,6 +383,7 @@ input::placeholder {
     background-color: #E3B873;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
+/* ===================Page-4==================================== */
 .heading-text-four {
     color: black;
     font-size: 20px;
@@ -394,23 +393,10 @@ input::placeholder {
     margin-top: -250px;
     padding-left: 4px;
 }
-.logo-4-1-1 {
-    padding-left: 33px;
-    padding-top: 10px;
-    grid-area: 2/10;
-    margin-top: -270px;
-}
-.logo-4-1-2 {
-    padding-left: 17px;
-    padding-top: 3px;
-    grid-area: 2/11;
-    margin-top: -270px;
-}
-.logo-4-1-3 {
-    padding-right: 93px;
-    padding-top: 10px;
-    grid-area: 2/12;
-    margin-top: -270px;
+.logos-4 {
+    grid-area: 1/11;
+    margin-top: -410px;
+    margin-left: -40px;
 }
 .block-4-image {
     width: max-content;
@@ -483,6 +469,7 @@ h5:only-of-type {
     margin-left: 45px;
     margin-top: -5px;
 }
+/* ==================Page-5========================== */
 .page-5 {
     margin-top: -210px;
 }
@@ -614,9 +601,10 @@ h5:only-of-type {
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
     margin-top: 27px;
 }
+/* ===================Page-5-5============================ */
 .page-5-5 {
     background-color: rgb(199, 61, 61);
-    background-image: url(/Users/User/projects/Skillfactory/lending/image/image\ 5.1.jpg);
+    background-image: url('../image/image-5-1.jpg');
     background-size: cover;
     height: 864px;
     padding-top: 194px;
@@ -688,6 +676,7 @@ h5:only-of-type {
     margin-top: -53px;
     margin-left: -38px;
 }
+/* ==================Page-6=========================== */
 .page-6 {
     margin-top: 110px;
 }
@@ -702,20 +691,9 @@ h5:only-of-type {
     margin-left: 182px;
     grid-area: 7;
 }
-.logo-6-1-1 {
-    padding-left: 73px;
-    padding-top: 10px;
-    grid-area: 2/9;
-}
-.logo-6-1-2 {
-    padding-left: 31px;
-    padding-top: 3px;
+.logos-6 {
     grid-area: 2/10;
-}
-.logo-6-1-3 {
-    padding-left: 41px;
-    padding-top: 10px;
-    grid-area: 2/11;
+    margin-left: -5px;
 }
 .page-six>span {
     color: #131313;
@@ -812,21 +790,26 @@ h5:only-of-type {
     margin-top: -27px; 
     margin-left: 16px;
 }
+.mobil-h2 {
+    visibility: hidden;
+    position: absolute;
+}
+.image-mobil {
+    visibility: hidden;
+    position: absolute;
+}
+/* ===============Page-7========================= */
 .page-7 {
     background-color: rgb(199, 61, 61);
-    background-image: url(/Users/User/projects/Skillfactory/lending/image/image-7-1.jpg);
+    background-image: url('../image/image-7-1.jpg');
     background-size: cover;
     padding-top: 0px;
     margin-top: -300px;
     position: relative;
 }
 .page-seven {
-    display: grid;
-    grid-template-columns: repeat(24, 50px);
-    grid-template-rows: repeat(15, 50px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    width: 1256px;
+    display: flex;
+    flex-direction: column;
 }
 .page-7::before {
     position: absolute;
@@ -838,12 +821,13 @@ h5:only-of-type {
     background-color: rgba(0, 0, 0, 0.7);
 }
 .final-form {
+    display: block;
+    align-self: center;
     width: 883px;
     height: 445.32px;
     background-color: #131313;
     z-index: 1;
-    grid-area: 4/4;
-    margin-top: -416px;
+    margin-top: -219px;  
 }
 .final-form-1>h2 {
     color: #FFFFFF;
@@ -869,6 +853,8 @@ h5:only-of-type {
     color:#FFFFFF;
     margin-left: 298.69px;
     margin-top: 46.46px;
+    font-size: 14px;
+    line-height: 163.68%;
 }
 .final-form-1>.button {
     width: 200px;
@@ -880,22 +866,23 @@ h5:only-of-type {
 .page-seven>h2 {
     z-index: 1;
     display: inline-block;
-    width: max-content;
+    font-size: 20px;
+    line-height: 28px;
     text-align: center;
-    grid-area: 5/6;
 }
 .logo-7 {
     display: flex;
     flex-direction: row;
-    z-index: 1;
-    grid-area: 7/11;
     gap: 15px;
-    margin-left: -15px;
+    z-index: 1;
+    justify-content: center;
 }
 .map {
     z-index: 1;
-    grid-area: 8/4;
+    display: block;
+    text-align: center;
 }
+/* ===========Footer=================== */
 .footer {
     height: 133px;
 } 
@@ -903,7 +890,11 @@ h5:only-of-type {
     padding-top: 48px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-.page-one {
+    .container {
+    max-width: 375px;
+    margin: 0 auto;
+} 
+    .page-one {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -941,6 +932,7 @@ p>br {
     gap: 26px;
     margin-top: 16px;
 }
+/* ==============================Page-2========================= */
 .page-two {
     display: flex;
     flex-direction: column;
@@ -959,18 +951,330 @@ p>br {
     justify-content: center;
 }
 .text-page-two>.heading-text {
-    display: contents;
-    justify-content: center;
     text-align: center;
 }
 .paragrahp-page-two {
+    display: block;
     font-size: 11px;
     line-height: 158.48%;
     text-align: center;
 }
+.content-page-two {
+    display: flex;
+    flex-direction: column;
+}
 .image-2-1 {
-    background-image: url(/image/image\ 5-5-1.jpg);
+    background-color: aquamarine;
+    background-image: url('../image/image-2.jpg');
     width: 340px;
     height: 242px;
+    margin-top: 246px;
+    align-self: center;
+    position: absolute;
+}
+.slider-mobil-l-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -710px;
+    position: relative;
+    z-index: 1;
+}
+.slider-mobil-l {
+    visibility: visible;
+    margin-top: 321px;
+    position: absolute;
+    margin-left: 32px;
+}
+.slider.slider-mobil-r {
+    visibility: visible;
+    margin-top: 321px;
+    position: absolute;
+    margin-left: 308px;
+}
+.text-page-two-conditions-1, .text-page-two-conditions-2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+    margin-top: 220px;
+}
+.content-page-two>.text-page-two-conditions-2 {
+    margin-top: 27px;
+}
+.apartament-block>.heading {
+    font-size: 14px;
+    line-height: 138.6%;
+}
+/* ==============================Page-3============================ */
+.page-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+}
+.page-three {
+    display: flex;
+    flex-direction: column;
+}
+.ht3 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: -350px;
+}
+.heading-text-3 {
+    margin-left: 0px;
+    font-size: 22px;
+    line-height: 138.6%;
+}
+.logo-3-1-1, .logo-3-1-2, .logo-3-1-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.logos-3 {
+    display: flex;
+    align-self: center;
+    margin-left: 0px;
+}
+.image-3-1 {
+    display: block;
+    text-align: center;
+    width: 340px;
+    height: 207px;
+    margin-left: 8px;
+}
+.image-shadow {
+    width: 391px;
+    height: 209px;
+    margin-left: -4px;
+    margin-top: -109px;
+    position: relative;
+}
+.logo-3-1-4 {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    margin-top: -185px;
+    margin-left: 135px;
+}
+.logo-3-1-5 {
+    display: none;
+}
+.paragrahp-page-three {
+    display: block;
+    font-size: 11px;
+    line-height: 169.8%;
+    color: #FFFFFF;
+    width: fit-content;
+    margin-top: -100px;
+    text-align: center;
+    padding: 0 17px;
+    margin-left: 0px;
+}
+/* ===========================Page-4========================= */
+.page-four {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-name, .form-phone {
+    margin-top: 0px;
+    padding-left: 17px;
+    width: 340px;
+}
+.input-form {
+    border: none;
+    border-bottom: 1px solid #3636364D;
+    background-color: #131313;
+    font-size: 14px;
+    line-height: 138.72%;
+    color: #FFFFFF;
+}
+.name, .form-phone>.phone {
+    width: 340px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+input::placeholder {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 138.72%;
+}
+.checkbox {
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+    height: 100px;
+    padding-left: 17px;
+}
+.button-page-three {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 17px;
+}
+.page-four {
+    position: relative;
+}
+.logos-4 {
+    align-self: center;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.heading-text-four {
+    align-self: center;
+    margin-top: 83px;
+    font-size: 22px;
+    line-height: 138.6%;
+}
+.block-4-image {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 522.85px;
+    margin-top: 400px;
+    width: 340px;
+    height: 365px;
+}
+.image-4-1, .image-4-2, .image-4-3 {
+    display: block;
+    width: 340px;
+    height: 365px;
+    margin-left: 0px;
+    margin-top: -350px;
+}
+.block-4 {
+    display: block;
+    align-items:center;
+    width: 270px;
+    height: 281px;
+    font-size: 13px;
+    line-height: 169.8%;;
+}
+.blocks-one {
+    margin-left: 17px;
+    margin-top: 430px;
+    position: absolute;
+}
+.blocks-price {
+    position: absolute;
+    margin-left: 17px;
+}
+.price-one {
+    margin-top: 683px;
+}
+.blocks-two {
+    margin-left: 17px;
+    margin-top: 970px;
+    position: absolute;
+}
+.price-two {
+margin-top: 1223px;
+}
+.blocks-three {
+    margin-left: 17px;
+    margin-top: 1505px;
+    position: absolute;
+}
+.price-three {
+    margin-top: 1760px;
+}
+/* ========================Page-5====================== */
+.page-5, .block-list-5-5, .list-5-5, .image-5-5-2, .image-5-5-3, .image-5-5-4, .page-5-5 {
+    display: none;
+}
+/* ========================Page-6====================== */
+.page-6 {
+    display: none;
+}
+/* ========================Page-7====================== */
+.page-6-5 {
+    display: flex;
+    flex-direction: column;
+}
+.page-7 {
+    margin-top: 1150px;
+}
+.mobil-h2 {
+    display: block;
+    visibility: visible;
+    z-index: 1;
+    width: 340px;
+    align-self: center;
+    text-align: center;
+    margin-top: 920px;
+}
+.image-mobil {
+    display: block;
+    visibility: visible;
+    z-index: 1;
+    width: 340px;
+    height: 242px;
+    align-self: center;
+    margin-top: 1020px;
+}
+.slider-mobil-page-7 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: -455px;
+    margin-left: -17px;
+}
+.page-seven {
+    background-color: #131313;
+}
+.final-form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin-top: 113px;
+}
+.final-form-1, .final-form-2 {
+    display: flex;
+    flex-direction: column;
+}
+.final-form-1-1, .final-form-2 {
+    width: 340px;
+    flex-direction: column;
+    margin-left: 0px;
+    gap: 50px;
+}
+.final-form-1>.checkbox {
+    margin-left: 0px;
+    margin-top: 23px;
+    padding: 0px;
+}
+.final-form-1>.button {
+    display: block;
+    align-self: center;
+    width: 340px;
+    height: 51px;
+    margin-top: 0px;
+    font-style: normal;
+    margin-left: 0px;
+}
+.map {
+    display: block;
+    position: absolute;
+    align-self: center;
+    margin-top: 700px;
+    width: 340px;
+    height: 242px;
+}
+.map-1 {
+    width: 340px;
+    height: 242px;
+}
+.page-seven>h2 {
+    margin-top: 400px;
+}
+.footer {
+    display: none;
 }
 }
