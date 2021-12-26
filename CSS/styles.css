@@ -4,6 +4,7 @@ body {
 }
 body * {
     box-sizing: border-box;
+
 }
 .container {
     max-width: 1256px;
@@ -984,13 +985,13 @@ p>br {
     visibility: visible;
     margin-top: 321px;
     position: absolute;
-    margin-left: 32px;
+    padding-left: 38px;
 }
 .slider.slider-mobil-r {
     visibility: visible;
     margin-top: 321px;
     position: absolute;
-    margin-left: 308px;
+    padding-left: 300px;
 }
 .text-page-two-conditions-1, .text-page-two-conditions-2 {
     display: flex;
