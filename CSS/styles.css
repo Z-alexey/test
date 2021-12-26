@@ -889,7 +889,7 @@ h5:only-of-type {
 .footer-content {
     padding-top: 48px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 .container {
     max-width: 375px;
     margin: 0 auto;
@@ -920,7 +920,7 @@ p>br {
     display: block;
     font-size: 19px;
     line-height: 135.84%;
-    width: fit-content;
+    width: 100%;
     padding: 0 17px;
 }
 .button {
